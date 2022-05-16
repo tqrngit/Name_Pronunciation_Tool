@@ -1,0 +1,9 @@
+.navigation {
+     width: 100%;
+         position: relative;
+         display: inline-flex;
+         height: 75px;
+         align-items: center;
+         background-color: #d71e28;
+         border-bottom: 4px solid #ffcd41;
+}
