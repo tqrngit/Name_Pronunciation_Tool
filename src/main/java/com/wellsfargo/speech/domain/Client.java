@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Client {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String first_name;
@@ -21,7 +21,7 @@ public class Client {
     private String speed;
 
     @Lob
-    @Column(columnDefinition = "text")
+    @Column(columnDefinition = "LONGBLOB")
     private String base64Audio;
 
     public Client() {
